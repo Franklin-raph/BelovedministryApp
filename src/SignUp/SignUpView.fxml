@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SignUpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="585.0" style="-fx-background-color: #303138;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.SignUpController">
+<children>
+   <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="238.0" layoutY="573.0" prefHeight="41.0" prefWidth="144.0" ripplerFill="BLACK" style="-fx-background-color: #add8e6;" text="Create Account">
+      <font>
+         <Font name="Gabriola" size="20.0" />
+      </font>
+   </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="510.0" layoutY="1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="min-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" size="1.5em" text="" />
+         </graphic>
+      </Label>
+      <Label fx:id="close_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="549.0" layoutY="1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="36.0" styleClass="close-btn">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <FontAwesomeIconView glyphName="TIMES" glyphStyle="-fx-fill:white" size="1.5em" text="" />
+         </graphic>
+      </Label>
+      <Label layoutX="224.0" layoutY="81.0" text="Membership Form" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="170.0" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #363b41;">
+               <graphic>
+                  <FontAwesomeIconView fill="#adadad" glyphName="USER" size="1.5em" styleClass="user_icon" />
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="username1" prefHeight="45.0" prefWidth="240.0" promptText="Username" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #adadad; -fx-background-color: #3b4248; -fx-background-radius: 0px;" styleClass="loginTextField">
+               <font>
+                  <Font name="Gabriola" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox layoutX="170.0" layoutY="229.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #363b41;">
+               <graphic>
+                  <FontAwesomeIconView fill="#adadad" glyphName="HOME" size="1.5em" styleClass="user_icon" />
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="username11" prefHeight="45.0" prefWidth="240.0" promptText="Hostel" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #adadad; -fx-background-color: #3b4248; -fx-background-radius: 0px;" styleClass="loginTextField">
+               <font>
+                  <Font name="Gabriola" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox layoutX="170.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #363b41;">
+               <graphic>
+                  <FontAwesomeIconView fill="#adadad" glyphName="CALENDAR" size="1.5em" styleClass="user_icon" />
+               </graphic>
+            </Label>
+            <JFXDatePicker minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="240.0" promptText="Date Of Birth" style="-fx-prompt-text-fill: #adadad; -fx-text-fill: #ffffff; -fx-background-color: #3b4248; -fx-background-radius: 0px;" />
+         </children>
+      </HBox>
+      <HBox layoutX="170.0" layoutY="342.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #363b41;">
+               <graphic>
+                  <FontAwesomeIconView fill="#adadad" glyphName="PHONE" size="1.5em" styleClass="user_icon" />
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="username111" prefHeight="45.0" prefWidth="240.0" promptText="Phone Number" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #adadad; -fx-background-color: #3b4248; -fx-background-radius: 0px;" styleClass="loginTextField">
+               <font>
+                  <Font name="Gabriola" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox layoutX="170.0" layoutY="398.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="280.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="40.0" style="-fx-background-color: #363b41;">
+               <graphic>
+                  <FontAwesomeIconView fill="#adadad" glyphName="BOOK" size="1.5em" styleClass="user_icon" />
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="username1111" prefHeight="45.0" prefWidth="240.0" promptText="Ministry" style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #adadad; -fx-background-color: #3b4248; -fx-background-radius: 0px;" styleClass="loginTextField">
+               <font>
+                  <Font name="Gabriola" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+</children>
+</AnchorPane>
