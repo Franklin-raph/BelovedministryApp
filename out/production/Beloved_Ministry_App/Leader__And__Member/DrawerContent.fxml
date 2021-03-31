@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DrawerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="213.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Leader__And__Member.DrawerContentController">
+   <children>
+      <JFXButton fx:id="addmember" layoutY="149.0" onAction="#addMember" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Add Member" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="17.0" layoutY="188.0" size="25" />
+      <JFXButton fx:id="editdetails" layoutY="210.0" onAction="#editDetails" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Edit Details" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="29.0" layoutY="249.0" size="25" />
+      <JFXButton fx:id="records" layoutY="271.0" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="View Members Records" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="EYE" layoutX="9.0" layoutY="308.0" size="25" />
+      <JFXButton fx:id="activities" layoutY="332.0" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Activities" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#eeeeee" glyphName="CALENDAR" layoutX="29.0" layoutY="372.0" size="25" />
+      <JFXButton fx:id="about" layoutY="393.0" prefHeight="60.0" prefWidth="213.0" onAction="#about" style="-fx-background-color: #303148;" text="About Ministry" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="QUESTION" layoutX="29.0" layoutY="433.0" size="25" />
+      <AnchorPane layoutY="1.0" prefHeight="148.0" prefWidth="213.0" style="-fx-background-color: #303138; -fx-border-radius: 10%;" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="207.0" layoutX="31.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="30.3961181640625" AnchorPane.topAnchor="8.0">
+               <image>
+                  <Image url="@../resources/Images/St_John2.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

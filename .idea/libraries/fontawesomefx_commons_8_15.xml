@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-commons-8.15">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dependencies/libs/fontawesomefx-commons-8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/libs/fontawesomefx-fontawesome-4.7.0-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/libs/jfoenix-8.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

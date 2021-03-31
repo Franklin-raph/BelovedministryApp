@@ -14,13 +14,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import util.Handlers;
 import util.WindowStyle;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -110,7 +107,7 @@ public class LoginController implements Initializable {
 
     public void back(ActionEvent event) throws Exception{
         Stage primaryStage = (Stage) LoginPane.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getResource("/Member/MemberDashBoard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Home/HomeScreen.fxml"));
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

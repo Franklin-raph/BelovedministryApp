@@ -6,21 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="213.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="213.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Leader__And__Member.DrawerContentController">
    <children>
-      <ImageView fitHeight="194.0" fitWidth="213.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <JFXButton layoutY="149.0" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Add Member's Record" textFill="WHITE">
+      <ImageView fitHeight="146.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="addmember" disable="true" layoutY="149.0" onAction="#addMember" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Add Member" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </JFXButton>
-      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="17.0" layoutY="188.0" size="25" />
-      <JFXButton layoutY="210.0" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Edit Details" textFill="WHITE">
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="27.0" layoutY="188.0" size="25" />
+      <JFXButton fx:id="editdetails" layoutY="210.0" onAction="#editDetails" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="Edit Details" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="18.0" />
          </font>
       </JFXButton>
-      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="29.0" layoutY="249.0" size="25" />
+      <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="39.0" layoutY="249.0" size="25" />
       <JFXButton layoutY="271.0" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #303148;" text="View Members Records" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="18.0" />

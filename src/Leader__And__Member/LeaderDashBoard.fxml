@@ -9,18 +9,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="memberPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" style="-fx-background-color: #303138;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Member.MemberController">
+<AnchorPane fx:id="memberPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" style="-fx-background-color: #303138;" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Leader__And__Member.LeaderController">
    <children>
-      <Label layoutX="14.0" layoutY="36.0" prefHeight="33.0" prefWidth="81.0" text="Welcome" textFill="WHITE">
-         <font>
-            <Font name="Gabriola" size="25.0" />
-         </font>
-      </Label>
-      <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="52.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="556.0" layoutY="52.0" styleClass="jfx-hamburger-icon" />
       <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="5.0" layoutY="35.0" prefHeight="454.0" prefWidth="213.0" />
       <AnchorPane prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: #303148;">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="523.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Min_label" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: transparent;" styleClass="min-btn">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="523.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Min_label" prefHeight="36.0" prefWidth="36.0" styleClass="min-btn">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -28,7 +23,7 @@
                   <FontAwesomeIconView glyphName="MINUS" glyphStyle="-fx-fill:white" size="1.5em" text="" />
                </graphic>
             </Label>
-            <Label fx:id="close_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="562.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_label" prefHeight="36.0" prefWidth="36.0" styleClass="close-btn">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="562.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_label" prefHeight="36.0" prefWidth="36.0" styleClass="close-btn" stylesheets="@../resources/style.css">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -38,12 +33,11 @@
             </Label>
          </children>
       </AnchorPane>
-      <JFXButton layoutX="264.0" layoutY="262.0" onAction="#btn" style="-fx-background-color: white;" />
-      <JFXButton layoutX="334.0" layoutY="262.0" onAction="#btn1" style="-fx-background-color: white;" />
       <JFXButton buttonType="RAISED" layoutX="530.0" layoutY="429.0" onAction="#back" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: #3b4248;" text="Back" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="20.0" />
          </font>
       </JFXButton>
+      <AnchorPane fx:id="LeaderDashAnchor" layoutX="227.0" layoutY="48.0" prefHeight="431.0" prefWidth="295.0" />
    </children>
 </AnchorPane>
